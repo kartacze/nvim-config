@@ -42,10 +42,9 @@ local sources = {
   -- b.diagnostics.ktlint,
   b.formatting.ktlint,
 
-
   -- elixir
   b.diagnostics.credo,
-  b.formatting.mix
+  b.formatting.mix,
 }
 
 null_ls.setup {

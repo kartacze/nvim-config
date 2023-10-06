@@ -14,13 +14,10 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
-    "kotlin"
+    "kotlin",
   },
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
   },
 }
 
@@ -31,7 +28,6 @@ M.mason = {
     "stylua",
 
     -- web dev stuff
-    "efm",
     "css-lsp",
     "html-lsp",
     "typescript-language-server",

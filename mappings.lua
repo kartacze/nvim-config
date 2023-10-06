@@ -27,6 +27,4 @@ M.ted_custom = {
   },
 }
 
--- more keybinds!
-
 return M

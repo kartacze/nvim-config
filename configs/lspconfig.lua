@@ -3,11 +3,6 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 local lsp_flags = require("plugins.configs.lspconfig").lsp_flags
 
--- local prettier_d = require "efmls-configs.formatters.prettier_d"
--- local eslint_d = require "efmls-configs.linters.eslint_d"
-
--- local stylua = require "efmls-configs.formatters.stylua"
-
 -- if you just want default config for the servers then put them in a table
 local servers = { "html", "cssls", "clangd" }
 
@@ -42,10 +37,6 @@ lspconfig.tsserver.setup {
 --   root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
 -- }
 
---
--- lspconfig.pyright.setup { blabla}
---
---
 lspconfig.elixirls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -65,44 +56,3 @@ lspconfig.elixirls.setup {
     fetchDeps = false,
   },
 }
-
--- local languages = require('efmls-configs.defaults').languages()
---
--- languages = vim.tbl_extend('force', languages, {
---   -- Custom languages, or override existing ones
---   html = {
---     require('efmls-configs.formatters.prettier'),
---   },
---       lua = {
---         stylua,
---       },
--- })
-
---
--- local efmls_config = {
---   filetypes = vim.tbl_keys(languages),
---   settings = {
---     rootMarkers = { '.git/' },
---     languages = languages,
---   },
---   init_options = {
---     documentFormatting = true,
---     documentRangeFormatting = true,
---   },
--- }
---
--- lspconfig.efm.setup(vim.tbl_extend('force', efmls_config, {
---     on_attach = on_attach,
---     capabilities = capabilities,
--- }))
-
--- lspconfig.efm.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
---   filetypes = { "lua" },
---     init_options = {documentFormatting = true},
---     settings = {
---         rootMarkers = {".git/"},
---         languages = languages
---     }
--- }
