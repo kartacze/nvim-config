@@ -12,7 +12,7 @@ M.ted_custom = {
       ":Telescope lsp_references<cr>",
       "lsp references",
     },
-    ["<leader>m"] = {
+    ["<leader>fm"] = {
       function()
         vim.lsp.buf.format { async = true }
       end,

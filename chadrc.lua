@@ -9,7 +9,7 @@ M.ui = {
   theme_toggle = { "tokyonight", "one_light" },
   transparency = true,
   statusline = {
-    theme ="vscode_colored",
+    theme = "minimal",
   },
   options = {
     view = {
@@ -19,6 +19,9 @@ M.ui = {
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+  nvdash = {
+    load_on_startup = true,
+  },
 }
 
 M.plugins = "custom.plugins"
